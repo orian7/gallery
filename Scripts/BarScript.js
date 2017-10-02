@@ -48,7 +48,7 @@ function paginationBtnClick() {
      right.style.position = "absolute";
      right.style.top = 200 +'px';
      right.style.right = 5 +'px';
-     right.setAttribute("src", "../Images/right.png" );
+     right.setAttribute("src", "./Images/right.png" );
 
       //create and locate the left arrow for pagination mechanism
      var left = document.getElementById("arrowLeft");
@@ -56,7 +56,7 @@ function paginationBtnClick() {
      left.style.position = "absolute";
      left.style.top = 200 +'px';
      left.style.left = 5 +'px';
-     left.setAttribute("src", "../Images/left.png" );
+     left.setAttribute("src", "./Images/left.png" );
      right.addEventListener("click", rightClick);
      left.addEventListener("click", leftClick);
 
@@ -138,7 +138,7 @@ function rightClick() {
    //(namelast is the name of the last current picture in the gallery)
     reddit.top(subReddit).limit(8).after(namelast).fetch(function (res) {
       addPicturesToGallery(res);
-      
+
     }, function(err) {
       //in case that the reddit return an error, inform the user
       alert("Reddit returned an error :(");
