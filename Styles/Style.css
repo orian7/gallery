@@ -1,0 +1,100 @@
+body {
+  background-repeat: repeat-y;
+  font-family: Helvetica, Arial;
+}
+input[type=text] {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px 18px 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-left: 380px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+input[type=text]:focus {
+    width: 40%;
+}
+.gallery {
+    margin: 8px;
+    height: 160px;
+    border: 10px solid #4682B4;
+    border-radius: 20px;
+    float: right;
+    width: 20%;
+    position: relative;
+    overflow: hidden;
+}
+.gallery:hover .description {
+  transform: translateY(0);
+  opacity: 1;
+}
+.description {
+  transition: .2s;
+  transform: translateY(1em);
+  padding: 8px;
+  font-family: Helvetica, Arial;
+  font-size: large;
+  font-weight: 700;
+}
+.gallery:hover {
+    border: 10px solid /*#F0F8FF*/#4682B4	;
+    opacity: 1;
+    cursor: pointer;
+}
+.middle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #4682B4;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity .2s, visibility .2s;
+}
+.gallery img {
+    width: 100%;
+    height: inherit;
+
+    backface-visibility: hidden;
+}
+.gallery:hover .middle {
+  visibility: visible;
+  opacity: 0.7;
+}
+
+.gallery img:hover {
+  transition: .9s ease-in;
+}
+.wall {
+  margin-right: 7%;
+}
+a:link {
+  width: inherit;
+  height: inherit;
+}
+.paginationButton {
+  background-color: #4682B4;
+  overflow: hidden;
+  position: absolute;
+  top: 10%;
+  bottom: 82%;
+  left: 80%;
+  right: 0;
+  border-radius: 40px;
+  color: white;
+
+}
+.paginationButton:hover {
+    background-color:	#B0C4DE;
+    color: black;
+}
