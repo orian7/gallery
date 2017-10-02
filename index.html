@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta charset="utf-8" />
+  <script src = "./dist/bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reddit.js@0.1.4/reddit.min.js"></script>
+    <title></title>
+</head>
+<body background="./Images/SailingBoatHorizon.jpg">
+  <div class="backgroundImg" >
+    <input type="text" id="search" onkeypress="enterKeyPress(event);" placeholder="Type subreddit...">
+    <button type="button" class="paginationButton" onclick="paginationBtnClick()">Pagination Mode</button>
+    <!--added for debugging in chrome-->
+    <script src="./Scripts/BarScript.js"> </script>
+<img id="arrowRight"></div>
+<img id="arrowLeft"></div>
+  <div class="wall">
+    <script src="./Scripts/DefaultRedditScript.js"> </script>
+    <script> redditDisplay(); </script>
+  </div>
+  </div>
+</body>
+</html>
