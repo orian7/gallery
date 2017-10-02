@@ -39,14 +39,14 @@ function paginationBtnClick() {
      right.style.position = "absolute";
      right.style.top = 200 +'px';
      right.style.right = 5 +'px';
-     right.setAttribute("src", "C:/Users/oriantov/Desktop/wixProj/Images/right.png" );
+     right.setAttribute("src", "../Images/right.png" );
       //create and locate the left arrow for pagination mechanism
      var left = document.getElementById("arrowLeft");
      left.style.visibility = 'hidden';
      left.style.position = "absolute";
      left.style.top = 200 +'px';
      left.style.left = 5 +'px';
-     left.setAttribute("src", "C:/Users/oriantov/Desktop/wixProj/Images/left.png" );
+     left.setAttribute("src", "../Images/left.png" );
      right.addEventListener("click", rightClick);
      left.addEventListener("click", leftClick);
    }, function(err) {
