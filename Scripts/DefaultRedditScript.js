@@ -1,4 +1,3 @@
-
 //function for triggering search on a particular subreddit that the user has entered as input
 function enterKeyPress(event) {
   event = event || window.event;
@@ -73,7 +72,7 @@ function getSubreddit() {
 //a function for clearing the page from pictures
 function clearDisplay() {
   var myNode = document.querySelector(".wall");
-  
+
   //remove all the gallery wall's children (i.e. all the pictures)
   while (myNode.firstChild) {
     myNode.removeChild(myNode.firstChild);
